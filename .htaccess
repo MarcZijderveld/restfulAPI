@@ -1,0 +1,10 @@
+<IfModule mod_rewrite.c>
+ RewriteEngine on
+
+ RewriteRule ^games/$ games.php
+ RewriteRule ^games$ games.php
+
+ RewriteRule ^games/([0-9]+)$ gameDetails.php?id=$1
+ RewriteRule ^games/([0-9]+)/$ gameDetails.php?id=$1
+
+</IfModule>
